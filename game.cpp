@@ -11,6 +11,7 @@
 void Game::Init()
 {
 	// anything that happens only once at application start goes here
+	player.LoadSprite();
 }
 
 // -----------------------------------------------------------
@@ -18,4 +19,5 @@ void Game::Init()
 // -----------------------------------------------------------
 void Game::Tick( float /* deltaTime */ )
 {
+	
 }

@@ -3,6 +3,8 @@
 // IGAD/NHTV/BUAS/UU - Jacco Bikker - 2006-2024
 
 #pragma once
+#include "iostream"
+#include "source/player.h"
 
 namespace Tmpl8
 {
@@ -23,6 +25,9 @@ public:
 	void KeyDown( int ) { /* implement if you want to handle keys */ }
 	// data members
 	int2 mousePos;
+
+private:
+	player player;
 };
 
 } // namespace Tmpl8
