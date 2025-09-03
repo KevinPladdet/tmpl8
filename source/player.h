@@ -1,13 +1,16 @@
 #pragma once
-#include "iostream"
 
-class player
+//class Game;
+
+class Player
 {
 public:
-	player();
-	void LoadSprite();
-	void MovePlayer();
+	Player();
+	void Update();
+
+	Surface* surface;
 
 private:
-	Sprite playerSprite;
+	//Game* game;
+	Sprite* playerSprite;
 };

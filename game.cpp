@@ -4,20 +4,16 @@
 
 #include "precomp.h"
 #include "game.h"
+#include "player.h"
+#include "map.h"
 
-// -----------------------------------------------------------
-// Initialize the application
-// -----------------------------------------------------------
 void Game::Init()
 {
-	// anything that happens only once at application start goes here
-	player.LoadSprite();
+	r_player = new Player();
+	r_player->surface = screen;
 }
 
-// -----------------------------------------------------------
-// Main application tick function - Executed once per frame
-// -----------------------------------------------------------
 void Game::Tick( float /* deltaTime */ )
 {
-	
+	r_player->Update();
 }

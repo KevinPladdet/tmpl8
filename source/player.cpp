@@ -1,20 +1,18 @@
 #include "precomp.h"
 #include "player.h"
+#include <iostream>
 
-player::player()
-	: playerSprite(new Surface("assets/BombermanGuy.png"), 16)
+Player::Player()
 {
-	
+	playerSprite = new Sprite(new Surface("assets/BombermanGuy.png"), 1);
 }
 
-void player::LoadSprite()
+void Player::Update()
 {
-	//playerSprite.Draw(screen, 0, 0);
+	playerSprite->Draw(surface, 50, 100);
 
-	std::cout << "Test" << std::endl;
-}
-
-void player::MovePlayer()
-{
-	
+	if (GetAsyncKeyState(87) & 0x0800)
+	{
+		std::cout << "Moving Upwards" << std::endl;
+	}
 }
