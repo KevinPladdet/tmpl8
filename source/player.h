@@ -13,4 +13,7 @@ public:
 private:
 	//Game* game;
 	Sprite* playerSprite;
+
+	int playerSpeed;
+	float playerX, playerY;
 };
