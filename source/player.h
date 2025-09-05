@@ -6,7 +6,7 @@ class Player
 {
 public:
 	Player();
-	void Update();
+	void Update(float deltaTime);
 
 	Surface* surface;
 
@@ -14,6 +14,6 @@ private:
 	//Game* game;
 	Sprite* playerSprite;
 
-	int playerSpeed;
+	float playerSpeed;
 	float playerX, playerY;
 };

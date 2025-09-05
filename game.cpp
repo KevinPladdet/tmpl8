@@ -6,6 +6,7 @@
 #include "game.h"
 #include "player.h"
 #include "map.h"
+#include <iostream>
 
 void Game::Init()
 {
@@ -13,7 +14,7 @@ void Game::Init()
 	r_player->surface = screen;
 }
 
-void Game::Tick( float /* deltaTime */ )
+void Game::Tick( float deltaTime )
 {
-	r_player->Update();
+	r_player->Update(deltaTime);
 }
